@@ -1,17 +1,13 @@
 ---
-import Card from '../components/Card.astro';
+import Cards from "../data/CardData"
+import Card from "./Card.astro"
 ---
 
 <section class="mt-14 absolute w-full h-auto flex justify-center">
-	<ul class="w-full h-auto p-6 flex gap-5 flex-wrap justify-center">
-		<Card></Card>
-		<Card></Card>
-		<Card></Card>
-		<Card></Card>
-		<Card></Card>
-		<Card></Card>
-		<Card></Card>
-		<Card></Card>
+	<ul class="w-full h-auto p-6 flex gap-5 flex-wrap justify-center" id="list_cards">
+		{
+			Cards.map(item => <Card {...item} /> )
+		}
 	</ul>
 </section>
 <style>
