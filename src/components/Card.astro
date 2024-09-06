@@ -1,6 +1,12 @@
-<li class="tablet:w-52 desktop:w-[300px] desktop:min-h-[300px] tablet:min-h-56 bg-red-800 rounded-md hover:opacity-50 transition-all duration-300">
-	<div class="w-full h-2/3 bg-[url('/src/images/ghost-tsushima.webp')] bg-cover rounded-md"></div>
-	<h3 class="h-1/3 flex items-center justify-center text-xl">Ghost Tsushima</h3>
-</li>
+---
+import type { Card } from '../types/types';
 
-<!--La idea es hacer que cuando le das click te salga un modal de la card con la reseña y su información y enlazarlo con view transitions api y me imagino que lo más cómodo para este tipo de uso es hacer un archivo de config en el que se meterían la info de la reseña, no se si así y desplegandolo cada cierto tiempo se actualizarían los datos sin necesidad de montar una web con serverside y si es así molaría meter una dirección en la que hay un formulario con el que se puede modificar el archivo más fácil. -->
+interface Props extends Card {}
+
+const {image,name,alt,frase,sinopsis,puntosPos,puntosNeg,valoraApart,valoraFinal} = Astro.props;
+---
+<li class=`tablet:w-52 desktop:w-[300px] desktop:min-h-[300px] tablet:min-h-56 bg-red-800 rounded-md hover:opacity-50 transition-all duration-300 bg-ghosttushima` >
+    <div class="w-full h-2/3 bg-cover bg-center rounded-md card" style=`background-image: url(${image});`></div>
+    <h3 class="h-1/3 flex items-center justify-center text-xl">{name}</h3>
+</li>
+<!-- TODO Cuando estás encima de la card que se mustre un outline y el titulo ascienda y por defecto que solo se mire la imagen -->
