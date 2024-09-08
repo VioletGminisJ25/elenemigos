@@ -13,7 +13,8 @@ const Cards: Card[] = [
 		valoraApart:
 			"Historia: 9'5\nJugabilidad/Gameplay:7'8\nSonidos:9\nBanda Sonora:10\nGráficos:10",
 		valoraFinal:
-            "Ghost Of Tsushima es una apuesta muy acertada por parte de la desarrolladora Suker Punch.Pese a pecar en algunos aspectos del gameplay, el resto del juego lo compensa, dando como resultado en jugo imprescindible si eres jugador de PlayStation.",
+			"Ghost Of Tsushima es una apuesta muy acertada por parte de la desarrolladora Suker Punch.Pese a pecar en algunos aspectos del gameplay, el resto del juego lo compensa, dando como resultado en jugo imprescindible si eres jugador de PlayStation.",
+		url: "/ghost",
 	},
 	{
 		name: "Toem",
@@ -28,6 +29,7 @@ const Cards: Card[] = [
 			"Historia: 9'5\nJugabilidad/Gameplay:7'8\nSonidos:9\nBanda Sonora:10\nGráficos:10",
 		valoraFinal:
 			"Ghost Of Tsushima es una apuesta muy acertada por parte de la desarrolladora Suker Punch.Pese a pecar en algunos aspectos del gameplay, el resto del juego lo compensa, dando como resultado en jugo imprescindible si eres jugador de PlayStation.",
+		url:"/toem",
 	},
 	{
 		name: "Devil May Cry",
@@ -42,6 +44,7 @@ const Cards: Card[] = [
 			"Historia: 9'5\nJugabilidad/Gameplay:7'8\nSonidos:9\nBanda Sonora:10\nGráficos:10",
 		valoraFinal:
 			"Ghost Of Tsushima es una apuesta muy acertada por parte de la desarrolladora Suker Punch.Pese a pecar en algunos aspectos del gameplay, el resto del juego lo compensa, dando como resultado en jugo imprescindible si eres jugador de PlayStation.",
+		url:"devil",
 	},
 ];
 export default Cards;

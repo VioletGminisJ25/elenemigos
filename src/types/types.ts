@@ -1,4 +1,3 @@
-
 export interface Card {
 	image: string;
 	name: string;
@@ -8,5 +7,6 @@ export interface Card {
 	puntosPos: string;
 	puntosNeg: string;
 	valoraApart: string;
-	valoraFinal:string;
+	valoraFinal: string;
+	url: string;
 }
