@@ -1,4 +1,4 @@
-import type { Card } from "../types/types";
+import type { Card } from "../types/types.ts";
 
 const Cards: Card[] = [
 	{
